@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(66, 139, 94);
+}
+
+:where(.container,form,.input-field, header) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    background: rgb(109, 105, 105);
+    border-radius: 12px;
+    padding: 30px 65px;
+    box-shadow: 15px 15px rgba(0, 0, 0, 0.1);
+    row-gap: 20px;
+}
+
+.container header {
+    width: 65px;
+    height: 65px;
+    color: rgb(77, 190, 25);
+    background: rgb(74, 74, 117);
+    font-size: 2.5rem;
+    border-radius: 50%;
+}
+
+.container h4 {
+    color: rgb(245, 227, 227);
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+form .input-field {
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.input-field input {
+    width: 42px;
+    height: 42px;
+    border-radius: 6px;
+    border: 1px solid rgb(180, 180, 180);
+    font-size: 1.125rem;
+    text-align: center;
+    outline: none;
+}
+
+.input-field input::-webkit-inner-spin-button,
+.input-field input::-webkit-outer-spin-button {
+    display: none;
+}
+
+form button {
+    width: 100%;
+    color: white;
+    background: rgb(85, 85, 233);
+    border-radius: 6px;
+    border: none;
+    font-size: 1rem;
+    margin-top: 25px;
+    padding: 9px 0;
+    cursor: pointer;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+form button.active {
+    background: blue;
+    pointer-events: auto;
+}
+
+form button:hover {
+    background: blue;
+}
